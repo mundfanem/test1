@@ -1,0 +1,18 @@
+package testBase;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class TestBase {
+	public static WebDriver driver;
+	
+	@Test
+	public void selectBrowser() {
+		String br="chrome";
+		if(br.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver", ".//Drivers/chromedriver.exe");
+			driver= new ChromeDriver();
+		}
+	}
+}

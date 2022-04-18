@@ -1,0 +1,7 @@
+package testBase;
+
+import testBase.TestBase;
+
+public class AspireTest1 extends TestBase {
+
+}

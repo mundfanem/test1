@@ -1,0 +1,15 @@
+package testCase;
+
+import org.testng.annotations.Test;
+
+import pagePOM.LoginPage;
+import testBase.TestBase;
+
+public class AspireTest1 extends TestBase {
+	LoginPage lp= new LoginPage();
+	
+	@Test
+	public void test1() {
+		lp.setEmail();
+	}
+}
